@@ -24,8 +24,8 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: volka-portfolio    # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: './angular-my-portfolio'      # set this to the path to your web app project, defaults to the repository root
-  NODE_VERSION: '20.x'                # set this to the node version to use
+  AZURE_WEBAPP_PACKAGE_PATH: './angular-my-portfolio'  # path to your web app project
+  NODE_VERSION: '20.x'                 # set this to the node version to use
 
 permissions:
   contents: read
@@ -41,19 +41,20 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
         cache: 'npm'
+      working-directory: ./angular-my-portfolio  # Specify the working directory here
 
     - name: npm install, build, and test
       run: |
         npm install
         npm run build --if-present
         npm run test --if-present
-      working-directory: ./angular-my-portfolio
+      working-directory: ./angular-my-portfolio  # Specify the working directory for npm commands
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
       with:
         name: node-app
-        path: angular-my-portfolio
+        path: angular-my-portfolio  # Upload the subdirectory as an artifact
 
   deploy:
     permissions:
@@ -76,4 +77,5 @@ jobs:
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        package: angular-my-portfolio
+        package: ./angular-my-portfolio  # Specify the subdirectory path
+
