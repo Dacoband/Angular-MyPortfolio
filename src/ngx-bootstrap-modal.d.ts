@@ -1,0 +1,1 @@
+touch src/ngx-bootstrap-modal.d.ts
