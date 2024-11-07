@@ -8,8 +8,9 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
   styleUrls: ['./project-card.component.css']
 })
 export class ProjectCardComponent {
- @Input() project = {} as Project;
- bsModalRef?: BsModalRef;
+  @Input() projectName!: string;
+  @Input() project = {} as Project;
+  bsModalRef?: BsModalRef;
 
   constructor(private modalService: BsModalService) {
     
