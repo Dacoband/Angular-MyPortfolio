@@ -1,0 +1,10 @@
+<section class="py-5 text-center">
+    <img src="src/assets/images/profile.jpg" class="rounded-circle mb-3" alt="Profile" style="width: 150px;">
+    <h1>{{ profile.name }}</h1>
+    <h4>{{ profile.position }}</h4>
+    <p>{{ profile.school }}</p>
+    <div class="contact">
+      <a [href]="'mailto:' + profile.email">{{ profile.email }}</a> |
+      <a [href]="profile.github" target="_blank">GitHub</a>
+    </div>
+</section>

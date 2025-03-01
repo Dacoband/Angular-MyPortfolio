@@ -1,0 +1,12 @@
+<section class="py-5">
+    <h2 class="text-center mb-4">Work Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let exp of experiences">
+        <div class="timeline-content">
+          <h5>{{ exp.company }} - {{ exp.position }}</h5>
+          <p>{{ exp.time }}</p>
+          <p>{{ exp.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
