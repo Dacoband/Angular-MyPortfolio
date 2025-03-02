@@ -1,20 +1,60 @@
-section {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    border-radius: 10px;
-    padding: 40px;
-  }
-  h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 32px;
-  }
-  h4 {
-    color: #666;
-  }
-  .contact a {
-    margin: 0 10px;
-    color: #007bff;
-    text-decoration: none;
-  }
-  .contact a:hover {
-    text-decoration: underline;
-  }
+.hero {
+  padding: 60px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social-links i {
+  font-size: 24px;
+}
+
+.btn-primary {
+  background-color: #FF8C00;
+  border: none;
+  padding: 10px 20px;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: #D2691E;
+}
+
+.btn-outline-primary {
+  border: 2px solid #FF8C00;
+  color: #FF8C00;
+  padding: 8px 18px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #FF8C00;
+  color: #FFFFFF;
+}
+
+.about {
+  padding: 60px 0;
+  color: #FFFFFF;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #FF8C00;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+}

@@ -11,6 +11,7 @@ export class HomeComponent {
   profile: Profile = {
     name: 'Huỳnh Thiện Nhân',
     position: 'Software Engineer - Backend',
+    city: 'Hồ Chí Minh',
     school: 'FPT University',
     email: 'bolicious123@gmail.com',
     github: 'https://github.com/dacoband'
