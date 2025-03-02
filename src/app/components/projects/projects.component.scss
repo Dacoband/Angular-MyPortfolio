@@ -1,10 +1,25 @@
 .card {
-    transition: transform 0.2s;
-  }
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  .btn-primary {
-    background-color: #007bff;
-    border: none;
-  }
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: #FF8C00;
+  border: none;
+  padding: 8px 16px;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: #D2691E;
+}

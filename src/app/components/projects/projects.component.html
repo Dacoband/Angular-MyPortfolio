@@ -1,13 +1,16 @@
 <section class="py-5">
-  <h2 class="text-center mb-4">Projects</h2>
-  <div class="row">
-    <div class="col-md-4" *ngFor="let project of projects">
-      <div class="card mb-3">
-        <div class="card-body">
-          <h5>{{ project.name }}</h5>
-          <p>{{ project.description }}</p>
-          <p><strong>Tech:</strong> {{ project.tech }}</p>
-          <a [href]="project.github" target="_blank" class="btn btn-primary">View on GitHub</a>
+  <h2 class="text-center mb-4" style="color: #1E90FF;">Latest Works.</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let project of projects">
+        <div class="card h-100 shadow">
+          <img src="assets/images/project-placeholder.jpg" class="card-img-top" alt="{{ project.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ project.name }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+            <p><strong>Tech:</strong> {{ project.tech }}</p>
+            <a [href]="project.github" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
         </div>
       </div>
     </div>

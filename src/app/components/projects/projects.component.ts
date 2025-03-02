@@ -13,9 +13,9 @@ export class ProjectsComponent {
   projects: Project[] = [
     {
       name: 'Website Portfolio',
-      description: 'Website cá nhân giới thiệu bản thân.',
-      tech: 'Angular, SCSS',
-      github: 'https://github.com/nguyenvana/portfolio'
+      description: 'Website cá nhân giới thiệu bản thân và các dự án đã thực hiện của tui qua những giai đoạn khác nhau.',
+      tech: 'Angular, SCSS, Bootstrap',
+      github: 'https://github.com/Dacoband/Angular-MyPortfolio'
     }
   ];
 }
