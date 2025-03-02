@@ -1,12 +1,16 @@
 <section class="py-5">
-    <h2 class="text-center mb-4">Work Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item" *ngFor="let exp of experiences">
-        <div class="timeline-content">
-          <h5>{{ exp.company }} - {{ exp.position }}</h5>
-          <p>{{ exp.time }}</p>
-          <p>{{ exp.description }}</p>
+  <h2 class="text-center mb-4" style="color: #1E90FF;">Work Experience</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let exp of experiences">
+        <div class="card h-100 shadow">
+          <div class="card-body">
+            <h5 class="card-title">{{ exp.company }} - {{ exp.position }}</h5>
+            <p class="card-text"><strong>Time:</strong> {{ exp.time }}</p>
+            <p class="card-text">{{ exp.description }}</p>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>

@@ -1,5 +1,25 @@
-.list-group-item {
-    background: #f8f9fa;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
+.card {
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #1E90FF;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}

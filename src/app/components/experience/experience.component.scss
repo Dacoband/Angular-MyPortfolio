@@ -1,25 +1,25 @@
-.timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  .timeline-item {
-    padding: 10px 40px;
-    position: relative;
-  }
-  .timeline-item::before {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background: #007bff;
-    top: 0;
-    bottom: 0;
-    left: 20px;
-  }
-  .timeline-content {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: relative;
-  }
+.card {
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #1E90FF;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}

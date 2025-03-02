@@ -1,8 +1,15 @@
 <section class="py-5">
-    <h2 class="text-center mb-4">Awards & Activities</h2>
-    <ul class="list-group w-50 mx-auto">
-      <li class="list-group-item" *ngFor="let award of awards">
-        {{ award.title }} - {{ award.time }}
-      </li>
-    </ul>
-  </section>
+  <h2 class="text-center mb-4" style="color: #1E90FF;">Awards & Activities</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let award of awards">
+        <div class="card h-100 shadow">
+          <div class="card-body">
+            <h5 class="card-title">{{ award.title }}</h5>
+            <p class="card-text"><strong>Time:</strong> {{ award.time }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
