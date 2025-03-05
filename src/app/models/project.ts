@@ -3,4 +3,5 @@ export interface Project{
     description: string;
     tech: string;
     github: string;
+    image?: string;
 }

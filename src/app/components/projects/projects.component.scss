@@ -1,16 +1,40 @@
 .card {
   border: none;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.6s, box-shadow 0.3s;
+  overflow: hidden;
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 10px;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: perspective(1000px) rotateY(10deg); // Hiệu ứng lật 3D khi hover
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.flashcard {
+  backface-visibility: hidden; // Ẩn mặt sau khi lật
 }
 
 .card-img-top {
   height: 200px;
   object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #1E90FF;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
 }
 
 .btn-primary {
@@ -22,4 +46,56 @@
 
 .btn-primary:hover {
   background-color: #D2691E;
+}
+
+// Style cho carousel
+.owl-carousel {
+  padding: 20px 0;
+}
+
+.owl-nav {
+  .owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #FF8C00;
+    background: rgba(255, 140, 0, 0.1);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .owl-prev {
+    left: -30px;
+  }
+
+  .owl-next {
+    right: -30px;
+  }
+
+  .owl-prev:hover, .owl-next:hover {
+    background: #FF8C00;
+    color: #FFFFFF;
+  }
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+
+  .owl-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #BBB;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+
+    &.active {
+      background: #FF8C00;
+    }
+  }
 }

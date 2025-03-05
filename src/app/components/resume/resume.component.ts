@@ -4,11 +4,10 @@ import { SafeUrlPipe } from '../../pipes/safe-url.pipe';
 
 
 @Component({
-  selector: 'app-resume',
-  standalone: true,
-  imports: [CommonModule, SafeUrlPipe], 
-  templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.scss']
+    selector: 'app-resume',
+    imports: [CommonModule, SafeUrlPipe],
+    templateUrl: './resume.component.html',
+    styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent {
   resumeUrl = '/assets/resume/resume.pdf'; 
