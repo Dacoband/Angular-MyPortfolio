@@ -1,0 +1,125 @@
+.raw_logo {
+    height: 40rem;
+    width: 50rem;
+}
+
+@keyframes animateElem1 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+@keyframes animateElem2 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+@keyframes animateElem3 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+@keyframes animateElem4 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+@keyframes animateElem5 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+@keyframes animateElem6 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+@keyframes animateElem7 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+@keyframes animateElem8 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+/* Apply animations with delay for each element */
+svg .svg-elem-1 {
+    fill: transparent;
+    animation: animateElem1 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s forwards;
+}
+
+svg .svg-elem-2 {
+    fill: transparent;
+    animation: animateElem2 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s forwards;
+}
+
+svg .svg-elem-3 {
+    fill: transparent;
+    animation: animateElem3 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1s forwards;
+}
+
+svg .svg-elem-4 {
+    fill: transparent;
+    animation: animateElem4 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s forwards;
+}
+
+svg .svg-elem-5 {
+    fill: transparent;
+    animation: animateElem5 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s forwards;
+}
+
+svg .svg-elem-6 {
+    fill: transparent;
+    animation: animateElem6 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s forwards;
+}
+
+svg .svg-elem-7 {
+    fill: transparent;
+    animation: animateElem7 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4s forwards;
+}
+
+svg .svg-elem-8 {
+    fill: transparent;
+    animation: animateElem8 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s forwards;
+}

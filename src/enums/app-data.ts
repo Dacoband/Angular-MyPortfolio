@@ -608,10 +608,10 @@ export const AppConfig = {
     googleFormContactLink: "https://docs.google.com/forms/d/e/1FAIpQLSfMOsQhl_Lci5s_qrYN-LEWlJ3NoBag-Uyf17IGktExA5KDpw/viewform?usp=header",
 
     // Home page
-    professionalTitle: "Development | Cyber Security | Freelancing",
+    professionalTitle: "Development | Students | Freelancing",
     professionalSummary: "A results-driven software engineer with expertise in full-stack development of high-quality user-centric solutions in agile environments.",
-    githubProfile: "https://github.com/dhruvilrathod",              // Your github profile link
-    portfolioRepository: "https://github.com/dhruvilrathod/Angular-Master-Portfolio",        // Your portfolio repository link
+    githubProfile: "https://github.com/Dacoband",              // Your github profile link
+    portfolioRepository: "https://github.com/Dacoband/Angular-MyPortfolio",        // Your portfolio repository link
     socialMedia: SocialMediaLinks,      // use from above
     aboutMe: [                          // all the sections you want to show under "What I do?". 
         FullstackSection,

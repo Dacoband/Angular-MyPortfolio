@@ -1,38 +1,48 @@
-<section class="hero py-5" style="background: #F5F7FA;">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6 text-left">
-        <h1 style="color: #1E90FF; font-size: xx-large;">Guten Morgen, wie geht'es.</h1>
-        <h2 style="color: #666;">I'm <span style="color: #FF8C00;">{{profile.name}}</span></h2>
-        <h4 style="color: #666;">{{ profile.position }}, based in <span>{{profile.city}}</span></h4>
-        <p>I’m a [brief description, e.g., "passionate developer with experience in creating modern websites using Angular, React, and more"].</p>
-        <div class="social-links mt-3">
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" class="me-2"><i class="fab fa-linkedin" style="color: #1E90FF;"></i></a>
-          <a href="{{ profile.github }}" target="_blank"><i class="fab fa-github" style="color: #1E90FF;"></i></a>
-        </div>
-        <div class="mt-4">
-          <a href="mailto:{{ profile.email }}" class="btn btn-outline-primary me-2">Email Me</a>
-          <a [href]="'/assets/resume/resume.pdf'" download="HuynhThienNhan_resume.pdf" class="btn btn-primary">Download My CV</a>
-        </div>
-      </div>
-      <div class="col-md-6 text-center">
-        <img src="/public/assets/images/profile.jpg" alt="Huỳnh Thiện Nhân" class="img-fluid rounded-circle" style="max-width: 300px; border: 5px solid #FF8C00;">
-      </div>
-    </div>
-  </div>
-</section>
+@if (!isAnimationPlayed && appConfig.loaderSplashAnimation) {
+  <app-splash></app-splash>
+}
 
-<section class="about py-5" style="background: #4A5568; color: #FFFFFF;">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="assets/images/about-illustration.png" alt="About Me" class="img-fluid" style="max-width: 300px;">
+@else {
+
+  <div class="greet-main" id="greeting">
+      <div class="greeting-main">
+
+          <div class="greeting-text-div" data-aos="fade-right">
+              <div>
+                  <h1 class="greeting-text">
+                      {{ appConfig.name }}
+                  </h1>
+                  <br>
+                  <h2 class="greeting-nickname">
+                      ( {{ appConfig.professionalTitle }} )
+                  </h2>
+                  <br>
+                  <p class="greeting-text-p subTitle">
+                      {{ appConfig.professionalSummary }}
+                  </p>
+
+                  <br>
+
+                  <app-social-media-links></app-social-media-links>
+
+                  <div class="portfolio-repo-btn-div">
+                      <a
+                          [href]="appConfig.portfolioRepository"
+                          target="_blank"
+                          class="general-button">
+                          ⭐ Star Me On Github
+                      </a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="greeting-image-div" data-aos="fade-left">
+              <img [src]="assetPaths.FEELING_PROUD_SVG" alt="Dacoband Coding">
+          </div>
       </div>
-      <div class="col-md-6">
-        <h2>About Me</h2>
-        <h4>Why hire me for your next project?</h4>
-        <p>I’m a dedicated and detail-oriented front-end developer who can work independently or in a team. With experience at [Company Name] and a passion for creating user-friendly interfaces, I believe in simplicity as a process of solving complex problems to be resolved in depth, in detail.</p>
-      </div>
-    </div>
   </div>
-</section>
+
+  <div class="greet-main">
+      <app-about-me></app-about-me>
+  </div>
+}

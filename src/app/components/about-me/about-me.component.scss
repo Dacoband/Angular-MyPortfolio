@@ -1,125 +1,174 @@
-.raw_logo {
-    height: 40rem;
-    width: 50rem;
+@import '../../../css/variables.scss';
+
+.skills-main-div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
 }
 
-@keyframes animateElem1 {
-    0% {
-        fill: transparent;
-    }
-
-    100% {
-        fill: white;
-    }
+.skills-header {
+    color: $theme-blue;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: normal;
+    font-family: "Google Sans Regular";
+    text-align: center;
 }
 
-@keyframes animateElem2 {
-    0% {
-        fill: transparent;
-    }
-
-    100% {
-        fill: white;
-    }
+.skills-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: $theme-secondary;
+    margin: 1rem 0;
+    text-align: left;
 }
 
-@keyframes animateElem3 {
-    0% {
-        fill: transparent;
-    }
-
-    100% {
-        fill: white;
-    }
+.skills-text-div>* {
+    font-family: "Google Sans Regular";
 }
 
-@keyframes animateElem4 {
-    0% {
-        fill: transparent;
-    }
+.skills-main-div {
+    flex: 1;
+    margin: 6rem auto;
+    text-align: center;
+    
+    .skills-image-div {
+        width: fit-content;
+        max-width: 40%;
 
-    100% {
-        fill: white;
-    }
-}
-
-@keyframes animateElem5 {
-    0% {
-        fill: transparent;
-    }
-
-    100% {
-        fill: white;
+        img {
+            height: auto;
+            text-align: center;
+        }
     }
 }
 
-@keyframes animateElem6 {
-    0% {
-        fill: transparent;
+.skills-heading {
+    color: $theme-blue;
+    font-size: 56px;
+    font-weight: 400;
+    font-family: "Google Sans Regular";
+    line-height: normal;
+}
+
+
+.social-media-div {
+    margin: 2rem auto;
+    font-size: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.icon-button img {
+    color: white;
+}
+
+.icon-button {
+    margin-bottom: 1rem;
+    border-radius: 100%;
+    height: fit-content;
+
+}
+
+.img-container {
+    width: fit-content;
+    border-radius: 100%;
+    transition: all 200ms;
+    
+    &:hover {
+        background-color: $theme-blue !important;
     }
 
-    100% {
-        fill: white;
+}
+
+.icon-button {
+    img {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        height: 4rem;
+        width: 4rem;
+        padding: 1rem;
+        filter: invert(1);
     }
 }
 
-@keyframes animateElem7 {
-    0% {
-        fill: transparent;
+
+
+
+
+/* Media Query */
+@media (max-width: 1380px) {
+    .skills-heading {
+        font-size: 40px;
     }
 
-    100% {
-        fill: white;
+    .skills-header {
+        font-size: 50px;
+    }
+
+    .skills-image-div>* {
+        max-width: 100%;
     }
 }
 
-@keyframes animateElem8 {
-    0% {
-        fill: transparent;
+@media (max-width: 768px) {
+    .skills-heading {
+        font-size: 30px;
+        text-align: center;
     }
 
-    100% {
-        fill: white;
+    .skills-header {
+        font-size: 30px;
+        text-align: center;
     }
-}
 
-/* Apply animations with delay for each element */
-svg .svg-elem-1 {
-    fill: transparent;
-    animation: animateElem1 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s forwards;
-}
+    .greeting-text-p {
+        font-size: 16px;
+        line-height: normal;
+    }
 
-svg .svg-elem-2 {
-    fill: transparent;
-    animation: animateElem2 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s forwards;
-}
+    .skills-main-div {
+        flex-direction: column;
+    }
 
-svg .svg-elem-3 {
-    fill: transparent;
-    animation: animateElem3 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1s forwards;
-}
+    .skills-text-div {
+        margin: 20px;
+    }
 
-svg .svg-elem-4 {
-    fill: transparent;
-    animation: animateElem4 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s forwards;
-}
+    .skills-text {
+        font-size: 1.2rem;
+    }
 
-svg .svg-elem-5 {
-    fill: transparent;
-    animation: animateElem5 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s forwards;
-}
+    .skills-text-subtitle {
+        font-size: 16px;
+        text-align: center;
+    }
 
-svg .svg-elem-6 {
-    fill: transparent;
-    animation: animateElem6 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s forwards;
-}
+    .skills-image-div {
+        /* display: none; */
+        order: 2;
+        max-width: 90% !important;
+    }
 
-svg .svg-elem-7 {
-    fill: transparent;
-    animation: animateElem7 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4s forwards;
-}
+    .skills-image-div>* {
+        margin-top: 0px;
+    }
 
-svg .svg-elem-8 {
-    fill: transparent;
-    animation: animateElem8 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s forwards;
+    .social-media-div {
+        justify-content: center;
+    }
+
+    .icon-button img {
+        height: 3rem;
+        width: 3rem;
+    }
 }
