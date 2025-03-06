@@ -600,9 +600,9 @@ const MastersDegree: EducationSection = {
 
 export const AppConfig = {
     loaderSplashAnimation: true,        // enable or disable splash screen at the initialization of website
-    logoName: "Dhruvil Rathod",         // Signature font logo name in header
-    name: "Dhruvil Rathod",             // your name
-    emailId: "thedhruvilrathod@gmail.com",  // your email id
+    logoName: "Dacoband",         // Signature font logo name in header
+    name: "Huynh Nhan",             // your name
+    emailId: "bolicious123@gmail.com",  // your email id
 
     // Google Form Contact Link
     googleFormContactLink: "https://docs.google.com/forms/d/e/1FAIpQLSfMOsQhl_Lci5s_qrYN-LEWlJ3NoBag-Uyf17IGktExA5KDpw/viewform?usp=header",
