@@ -1,0 +1,58 @@
+@import '../../../css/variables.scss';
+
+.social-media-div {
+    font-size: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.icon-button img {
+    color: white;
+}
+
+.icon-button {
+    margin-bottom: 1rem;
+    border-radius: 100%;
+    height: fit-content;
+
+}
+
+.img-container {
+    width: fit-content;
+    border-radius: 100%;
+    transition: all 200ms;
+    
+    &:hover {
+        background-color: $theme-blue !important;
+    }
+
+}
+
+.icon-button {
+    img {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        height: 4rem;
+        width: 4rem;
+        padding: 1rem;
+        filter: invert(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .social-media-div {
+        justify-content: center;
+    }
+
+    .icon-button img {
+        height: 3rem;
+        width: 3rem;
+    }
+}

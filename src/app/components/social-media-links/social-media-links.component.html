@@ -1,1 +1,20 @@
-<p>social-media-links works!</p>
+<div class="social-media-div">
+
+    @for (s of appConfig.socialMedia; track $index) {
+        <a 
+            [href]="s.link" 
+            target="_blank"
+            rel="noopener noreferrer" 
+            class="icon-button"
+            [title]="s.name"
+            >
+    
+            <div class="img-container" [ngStyle]="{'backgroundColor': s.backgroundColor }">
+                <img 
+                    src="https://unpkg.com/simple-icons@v13/icons/{{ s.simpleIconName }}.svg"
+                    />
+            </div>
+    
+        </a>
+    }
+</div>
