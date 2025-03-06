@@ -1,5 +1,17 @@
-<app-header></app-header>
-<div class="container">
+@if (globalStatsService.isSplashAnimationPlayed || !appConfig.loaderSplashAnimation) {
+  <div>
+      <app-header></app-header>
+  </div>
+}
+
+<div class="main-container">
   <router-outlet></router-outlet>
 </div>
-<app-footer></app-footer>
+
+@if (globalStatsService.isSplashAnimationPlayed || !appConfig.loaderSplashAnimation) {
+  <div>
+      <app-footer></app-footer>
+  </div>
+}
+
+<app-scroll-to-top></app-scroll-to-top>

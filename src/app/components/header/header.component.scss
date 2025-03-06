@@ -1,13 +1,67 @@
-.navbar {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+@import "../../../css/variables.scss";
+
+.header {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo-name-container {
+        display: block;
+        float: left;
+        font-size: 1.5em;
+        text-decoration: none;
+        margin-top: 10px;
+        line-height: normal;
+
+        .logo-name {
+            font-family: "Agustina Regular";
+            font-weight: bold;
+            padding: 0;
+            color: $theme-blue;
+        }
+    }
 }
 
-.nav-link.active {
-  color: #FFFFFF !important;
-  border-bottom: 2px solid #1E90FF;
+ul.menu {
+    font-family: "Google Sans Regular";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100%;
+
+    &.small {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    li {
+
+        a {
+            padding: 1rem;
+            display: block;
+            text-decoration: none;
+            transition: all 200ms;
+            color: $theme-blue;
+            text-align: center;
+
+            &:hover {
+                background-color: #A6E1FA;
+                display: block;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
-.nav-link:hover {
-  color: #FFFFFF !important;
-  background: rgba(255, 255, 255, 0.2);
-}
+
+// .nav-overlay-background {
+//     position: absolute;
+//     z-index: 1;
+//     height: 100vh;
+//     width: 100vw;
+//     background-color: black;
+//     opacity: 0.5;
+// }
