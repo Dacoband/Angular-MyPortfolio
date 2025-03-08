@@ -1,17 +1,17 @@
 {
-  "hosting": {
-    "public": "dist/angular-myportfolio",
-    "target": "angular-myportfolio",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
-} 
+    "hosting": {
+        "public": "dist/angular-master-portfolio/browser",
+        "target": "angular-master-portfolio",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
+    }
+}

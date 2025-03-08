@@ -1,0 +1,136 @@
+@import "../../../css/variables.scss";
+
+.education-main {
+    width: 100%;
+    margin: 8rem 0;
+}
+
+.basic-education {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.education-heading-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-heading-div>* {
+    flex: 1;
+}
+
+.education-heading-img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-heading-text-div {
+    text-align: center;
+}
+
+.education-heading-img-div>* {
+    max-width: 100%;
+    height: auto;
+}
+
+.education-heading-text {
+    font-size: 56px;
+    font-weight: 400;
+    color: $theme-blue;
+    font-family: "Google Sans Medium";
+    line-height: 1.1;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.education-heading-sub-text {
+    font-size: 30px;
+    font-family: "Google Sans Regular";
+    color: $theme-secondary;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.education-header-detail-text {
+    font-size: 20px;
+    line-height: 30px;
+    color: $theme-secondary;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Google Sans Medium";
+}
+
+.section-heading-text-div {
+    margin: 8rem 0 4rem 0;
+    text-align: center;
+    font-family: "Google Sans Regular";
+}
+
+.section-heading-text {
+    font-size: 56px;
+    font-weight: 600;
+    color: $theme-blue;
+}
+
+.section-header-detail-text {
+    color: $theme-secondary;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 2rem 0;
+    font-family: Google Sans Medium;
+}
+
+.education-cards-div-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1380px) {
+
+    .education-main {
+        margin-top: 4rem;
+    }
+
+    .education-heading-text {
+        font-size: 50px;
+        margin-top: 80px;
+    }
+
+    .education-heading-sub-text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .education-heading-text,
+    .section-heading-text {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .education-heading-sub-text {
+        font-size: 20px;
+    }
+
+    .education-heading-div {
+        flex-direction: column;
+    }
+
+    .education-header-detail-text {
+        font-size: 16px;
+        margin-right: 0px;
+        margin-left: 0px;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .education-cards-div-main {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

@@ -7,18 +7,24 @@ import { AppConfig } from '../../../enums/app-data';
 import { HttpClient } from '@angular/common/http';
 import { AssetPaths } from '../../../enums/asset-paths.enum';
 
+
 @Component({
     selector: 'app-header',
-    imports: [RouterLink, RouterLinkActive, CommonModule],
     standalone: true,
-    animations:[
+    imports: [
+        RouterLink,
+        RouterLinkActive,
+        CommonModule,
+    ],
+    animations: [
         menuOpenCloseAnimation,
         menuOpenCloseHeightAnimation,
     ],
     templateUrl: './header.component.html',
-    styleUrls: ['./header.component.scss']
+    styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+
     public navbarOpen = false;
     public linksData = RoutesData;
     public appData = AppConfig;
@@ -71,4 +77,5 @@ export class HeaderComponent {
     private getFileNameFromPath(path: string): string {
         return path.split('/').pop() || 'downloaded_file';
     }
+
 }

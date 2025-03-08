@@ -1,16 +1,16 @@
 {
-  "projects": {},
-  "targets": {
-    "portfolio-d00bd": {
-      "hosting": {
-        "angular-portfolio": [
-          "angular-portfolio"
-        ],
-        "angular-myportfolio": [
-          "angular-myportfolio"
-        ]
-      }
-    }
-  },
-  "etags": {}
+    "projects": {
+        "default": "freelancing-qa"
+    },
+    "targets": {
+        "freelancing-qa": {
+            "hosting": {
+                "angular-master-portfolio": [
+                    "angular-master-portfolio"
+                ]
+            }
+        }
+    },
+    "etags": {},
+    "dataconnectEmulatorConfig": {}
 }

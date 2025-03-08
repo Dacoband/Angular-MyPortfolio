@@ -1,16 +1,43 @@
-<section class="py-5">
-  <h2 class="text-center mb-4" style="color: #1E90FF;">Work Experience</h2>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 mb-4" *ngFor="let exp of experiences">
-        <div class="card h-100 shadow">
-          <div class="card-body">
-            <h5 class="card-title">{{ exp.company }} - {{ exp.position }}</h5>
-            <p class="card-text"><strong>Time:</strong> {{ exp.time }}</p>
-            <p class="card-text">{{ exp.description }}</p>
-          </div>
+<div class="experience-main">
+    <div class="basic-experience">
+        <div class="experience-heading-div">
+
+            <div class="experience-heading-img-div" data-aos="fade-right">
+                <img [src]="assetPaths.EXPERIENCE_COVER" alt="Projects & Freelancing">
+            </div>
+            
+            <div class="experience-heading-text-div" data-aos="fade-left">
+                <h1 class="experience-heading-text">
+                    {{ appConfig.experiencePageTitle }}
+                </h1>
+                <p class="experience-header-detail-text subTitle">
+                    {{ appConfig.experiencePageDescription }}
+                </p>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-</section>
+
+    @for (exps of appConfig.experienceSections; track $index) {
+
+        <div class="section-heading-text-div" data-aos="fade-up">
+            <h1 class="section-heading-text">
+                {{ exps.experienceSectionTitle }}
+            </h1>
+    
+            <p class="section-header-detail-text">
+                {{ exps.experienceSectionSubtitle }}
+            </p>
+        </div>
+    
+    
+        <div class="experience-cards-div-main">
+
+            @for (exp of exps.experiences; track $index) {
+                <app-experience-card [experience]="exp" class="w-full"></app-experience-card>
+            }
+
+        </div>
+
+    }
+
+</div>

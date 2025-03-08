@@ -1,25 +1,138 @@
-.card {
-  border: none;
-  transition: transform 0.3s, box-shadow 0.3s;
+@import "../../../css/variables.scss";
+
+.experience-main {
+    width: 100%;
+    text-align: center;
+    margin: 8rem 0;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.basic-experience {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.card-body {
-  padding: 20px;
+.experience-heading-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.card-title {
-  font-size: 20px;
-  color: #1E90FF;
-  margin-bottom: 15px;
+.experience-heading-div>* {
+    flex: 1;
 }
 
-.card-text {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.6;
+.experience-heading-img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-heading-text-div {
+    text-align: center;
+}
+
+.experience-heading-img-div>* {
+    max-width: 100%;
+    height: auto;
+}
+
+.experience-heading-text {
+    font-size: 56px;
+    font-weight: 400;
+    color: $theme-blue;
+    font-family: "Google Sans Medium";
+    line-height: 1.1;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.experience-heading-sub-text {
+    font-size: 30px;
+    font-family: "Google Sans Regular";
+    color: $theme-secondary;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.experience-header-detail-text {
+    font-size: 20px;
+    line-height: 30px;
+    color: $theme-secondary;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Google Sans Medium";
+}
+
+.section-heading-text-div {
+    margin: 8rem 0 4rem 0;
+    text-align: center;
+    font-family: "Google Sans Regular";
+}
+
+.section-heading-text {
+    font-size: 56px;
+    font-weight: 600;
+    color: $theme-blue;
+}
+
+.section-header-detail-text {
+    color: $theme-secondary;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 2rem 0;
+    font-family: Google Sans Medium;
+}
+
+.experience-cards-div-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1380px) {
+
+    .experience-main {
+        margin-top: 4rem;
+    }
+
+    .experience-heading-text {
+        font-size: 50px;
+        margin-top: 80px;
+    }
+
+    .experience-heading-sub-text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .experience-heading-text,
+    .section-heading-text {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .experience-heading-sub-text {
+        font-size: 20px;
+    }
+
+    .experience-heading-div {
+        flex-direction: column;
+    }
+
+    .experience-header-detail-text {
+        font-size: 16px;
+        margin-right: 0px;
+        margin-left: 0px;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .experience-cards-div-main {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 30px;
+    }
 }

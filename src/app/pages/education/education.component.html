@@ -1,0 +1,34 @@
+<div class="education-main">
+    <div class="basic-education">
+        <div class="education-heading-div">
+
+            <div class="education-heading-img-div" data-aos="fade-right">
+                <img [src]="assetPaths.EDUCATION_COVER" alt="Projects & Freelancing">
+            </div>
+            
+            <div class="education-heading-text-div" data-aos="fade-left">
+                <h1 class="education-heading-text">
+                    {{ appConfig.educationPageTitle }}
+                </h1>
+                <p class="education-header-detail-text subTitle">
+                    {{ appConfig.educationPageDescription }}
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-heading-text-div" data-aos="fade-up">
+        <h1 class="section-heading-text">
+            My Degrees
+        </h1>
+    </div>
+
+        <div class="education-cards-div-main divide-y-2 divide-blue-400">
+
+            @for (edu of appConfig.educationSections; track $index) {
+                <app-education-card [education]="edu" class="w-full"></app-education-card>
+            }
+
+        </div>
+</div>

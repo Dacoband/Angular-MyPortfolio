@@ -1,48 +1,48 @@
 @if (!isAnimationPlayed && appConfig.loaderSplashAnimation) {
-  <app-splash></app-splash>
+    <app-splash></app-splash>
 }
 
 @else {
 
-  <div class="greet-main" id="greeting">
-      <div class="greeting-main">
+    <div class="greet-main" id="greeting">
+        <div class="greeting-main">
 
-          <div class="greeting-text-div" data-aos="fade-right">
-              <div>
-                  <h1 class="greeting-text">
-                      {{ appConfig.name }}
-                  </h1>
-                  <br>
-                  <h2 class="greeting-nickname">
-                      ( {{ appConfig.professionalTitle }} )
-                  </h2>
-                  <br>
-                  <p class="greeting-text-p subTitle">
-                      {{ appConfig.professionalSummary }}
-                  </p>
+            <div class="greeting-text-div" data-aos="fade-right">
+                <div>
+                    <h1 class="greeting-text">
+                        {{ appConfig.name }}
+                    </h1>
+                    <br>
+                    <h2 class="greeting-nickname">
+                        ( {{ appConfig.professionalTitle }} )
+                    </h2>
+                    <br>
+                    <p class="greeting-text-p subTitle">
+                        {{ appConfig.professionalSummary }}
+                    </p>
 
-                  <br>
+                    <br>
 
-                  <app-social-media-links></app-social-media-links>
+                    <app-social-media-links></app-social-media-links>
 
-                  <div class="portfolio-repo-btn-div">
-                      <a
-                          [href]="appConfig.portfolioRepository"
-                          target="_blank"
-                          class="general-button">
-                          ⭐ Star Me On Github
-                      </a>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="greeting-image-div" data-aos="fade-left">
-              <img [src]="assetPaths.FEELING_PROUD_SVG" alt="Dacoband Coding">
-          </div>
-      </div>
-  </div>
+                    <div class="portfolio-repo-btn-div">
+                        <a
+                            [href]="appConfig.portfolioRepository"
+                            target="_blank"
+                            class="general-button">
+                            ⭐ Star Me On Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="greeting-image-div" data-aos="fade-left">
+                <img [src]="assetPaths.FEELING_PROUD_SVG" alt="Dhruvil Coding">
+            </div>
+        </div>
+    </div>
 
-  <div class="greet-main">
-      <app-about-me></app-about-me>
-  </div>
+    <div class="greet-main">
+        <app-about-me></app-about-me>
+    </div>
 }

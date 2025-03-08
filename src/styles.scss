@@ -1,6 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import "./css/variables.scss";
 
 @font-face {
@@ -72,6 +74,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Media Query */
 @media (max-width: 1380px) {
 
     html,

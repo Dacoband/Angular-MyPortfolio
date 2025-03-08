@@ -15,13 +15,13 @@ const SocialMediaLinks: ExternalSite[] = [
     },
     {
         name: "LinkedIn",
-        link: "https://www.linkedin.com/in/dhruvilrathod/",
+        link: "https://www.linkedin.com/in/nhan-huynh-b8ab67255/",
         simpleIconName: "linkedin", // this icon is not available in simple icon v14
         backgroundColor: "#0066c8", // manually checked
     },
     {
         name: "LeetCode",
-        link: "https://leetcode.com/dhruvilrathod/",
+        link: "https://leetcode.com/u/Dacoband/",
         simpleIconName: "leetcode",
         backgroundColor: "#FFA116",
     },
@@ -33,7 +33,7 @@ const SocialMediaLinks: ExternalSite[] = [
     },
     {
         name: "Instagram",
-        link: "https://www.instagram.com/dhruvil.rthd/",
+        link: "https://www.instagram.com/volkasses/",
         simpleIconName: "instagram",
         backgroundColor: "#FF0069",
     }
@@ -78,10 +78,10 @@ const FullstackSkills: ExternalSite[] = [
         backgroundColor: "#F7DF1E",
     },
     {
-        name: "ExpressJS",
-        link: "https://expressjs.com/",
-        simpleIconName: "express",
-        backgroundColor: "#000000",
+        name: "Angular",
+        link: "https://angular.dev/",
+        simpleIconName: "angular",
+        backgroundColor: "#0F0F11",
     },
     {
         name: "ThreeJS",
@@ -102,10 +102,10 @@ const FullstackSkills: ExternalSite[] = [
         backgroundColor: "#7952B3",
     },
     {
-        name: "PrimeNG",
-        link: "https://primeng.org/",
-        simpleIconName: "primeng",
-        backgroundColor: "#DD0031",
+        name: ".NET",
+        link: "https://dotnet.microsoft.com/",
+        simpleIconName: "dotnet",
+        backgroundColor: "#512BD4",
     },
 ];
 
@@ -117,8 +117,8 @@ const FullstackSection: SkillSection = {
     skillsList: [
         "Building responsive website front-end using Angular",
         "Developing custom and interactive 3D websites",
-        "Creating application backend in Node, Express & NestJS",
-        "Managing data safely with PostgreSQL, MongoDB and OracleDB",
+        "Creating application backend in Node, NestJS & .NET",
+        "Managing data safely with SQL Server, PostgreSQL, MongoDB and OracleDB",
     ]
 }
 
@@ -565,14 +565,14 @@ const AchievementInvolvement: ProjectSection = {
 
 // Degrees
 const BachelorsDegree: EducationSection = {
-    degreeName: "Bachelor of Engineering",
-    majorName: "Computer Engineering",
-    duration: "Jul 2019 - May 2023",
-    universityName: "Gujarat Technological University (GTU)",
-    campusName: "VGEC",
-    logoImagePath: AssetPaths.EDUCATION_GTU_LOGO,
-    gpa: "6.9 / 7.0",
-    websiteLink: "https://www.gtu.ac.in/",
+    degreeName: "Bachelor of Information Technology",
+    majorName: "Software Engineering",
+    duration: "Sep 2021 - Sep 2025",
+    universityName: "FPT University",
+    campusName: "Ho Chi Minh Campus",
+    logoImagePath: AssetPaths.EDUCATION_FPTU_LOGO,
+    gpa: "7.14 / 10",
+    websiteLink: "https://daihoc.fpt.edu.vn/",
     studyPoints: [
         "Studied foundational subjects like Data Structures, Database Management Systems, Discrete Mathematics, and Operating Systems, building a strong base in computer science. 🧠💻",
         "Explored Object-Oriented Programming, Software Engineering, Computer Networks, and Microprocessor & Interfacing, bridging software development with hardware understanding. ⚙️",
@@ -581,14 +581,14 @@ const BachelorsDegree: EducationSection = {
 }
 
 const MastersDegree: EducationSection = {
-    degreeName: "Master of Information Technology",
-    majorName: "Cyber Security",
-    duration: "Feb 2024 - Dec 2025",
-    universityName: "University of South Australia (UniSA)",
-    campusName: "Mawson Lakes",
-    logoImagePath: AssetPaths.EDUCATION_UNISA_LOGO,
-    gpa: "6.7 / 7.0",
-    websiteLink: "https://i.unisa.edu.au/students/",
+    degreeName: "Bachelor of Information Technology",
+    majorName: "Software Engineering",
+    duration: "Sep 2021 - Sep 2025",
+    universityName: "FPT University",
+    campusName: "Ho Chi Minh Campus",
+    logoImagePath: AssetPaths.EDUCATION_FPTU_LOGO,
+    gpa: "7.14 / 10",
+    websiteLink: "https://daihoc.fpt.edu.vn/",
     studyPoints: [
         "Built expertise in Security Principles, Network Infrastructure, and Risk Management, laying a solid foundation in cybersecurity fundamentals. 🔐",
         "Gained deep knowledge in Security Architecture, Network Security, and Critical Infrastructure Protection, alongside insights into Cyber Criminal Behavior and Australian Cyber Law. ⚙️🛡️",
@@ -599,7 +599,7 @@ const MastersDegree: EducationSection = {
 
 
 export const AppConfig = {
-    loaderSplashAnimation: true,        // enable or disable splash screen at the initialization of website
+    loaderSplashAnimation: false,        // enable or disable splash screen at the initialization of website
     logoName: "Dacoband",         // Signature font logo name in header
     name: "Huynh Nhan",             // your name
     emailId: "bolicious123@gmail.com",  // your email id

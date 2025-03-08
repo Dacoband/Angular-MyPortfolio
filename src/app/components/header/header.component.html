@@ -1,106 +1,106 @@
 <div class="header h-auto flex align-center justify-between gap-8" data-aos="fade-down">
 
-  <div class="w-[80%] lg:w-fit flex align-center justify-center">
-      
-      <div class="logo-name-container">
-          <a href="/">
-              <span> &lt;</span>
-                <span class="logo-name">
-                  {{ appData.logoName }}
-                </span>
-                <span>/&gt;</span>
-          </a>
-      </div>
-      
-  </div>
+    <div class="w-[80%] lg:w-fit flex align-center justify-center">
+        
+        <div class="logo-name-container">
+            <a href="/">
+                <span> &lt;</span>
+                  <span class="logo-name">
+                    {{ appData.logoName }}
+                  </span>
+                  <span>/&gt;</span>
+            </a>
+        </div>
+        
+    </div>
 
-  <button 
-          class="block lg:hidden"
-          type="button"
-          (click)="toggleNavbar()">
-          <i class="text-2xl fa-solid fa-bars"></i>
-  </button>
+    <button 
+            class="block lg:hidden"
+            type="button"
+            (click)="toggleNavbar()">
+            <i class="text-2xl fa-solid fa-bars"></i>
+    </button>
 
-  <div class="hidden lg:block grow">
-      <ul class="menu">
-          @for (l of linksData; track $index) {
-              @if (l.isVisible) {
-                  <li>
-                      @if (l.isExternalLink) {
-                          <a 
-                              [href]="l.routeURLName" 
-                              target="_blank"
-                              [routerLinkActive]="['font-bold']"
-                              [routerLinkActiveOptions]="{exact: true}" 
-                              [title]="l.routeTooltipValue ?? l.routeLinkText"
-                              >
-                              {{ l.routeLinkText }}
-                          </a>
-                      }
-                      @else {
-                          <a 
-                              [routerLink]="l.routeURLName" 
-                              [routerLinkActive]="['font-bold']"
-                              [routerLinkActiveOptions]="{exact: true}" 
-                              [title]="l.routeTooltipValue ?? l.routeLinkText"
-                              >
-                              {{ l.routeLinkText }}
-                          </a>
-                      }
-                  </li>
-              }
-          }
-      </ul>
-  </div>
+    <div class="hidden lg:block grow">
+        <ul class="menu">
+            @for (l of linksData; track $index) {
+                @if (l.isVisible) {
+                    <li>
+                        @if (l.isExternalLink) {
+                            <a 
+                                [href]="l.routeURLName" 
+                                target="_blank"
+                                [routerLinkActive]="['font-bold']"
+                                [routerLinkActiveOptions]="{exact: true}" 
+                                [title]="l.routeTooltipValue ?? l.routeLinkText"
+                                >
+                                {{ l.routeLinkText }}
+                            </a>
+                        }
+                        @else {
+                            <a 
+                                [routerLink]="l.routeURLName" 
+                                [routerLinkActive]="['font-bold']"
+                                [routerLinkActiveOptions]="{exact: true}" 
+                                [title]="l.routeTooltipValue ?? l.routeLinkText"
+                                >
+                                {{ l.routeLinkText }}
+                            </a>
+                        }
+                    </li>
+                }
+            }
+        </ul>
+    </div>
 
-  <div class="h-full hidden lg:block">
-      <button 
-          class="general-button"
-          type="button"
-          (click)="resumeDownload()">
-          Resume
-          <i class="fa-solid fa-download"></i>
-      </button>
-  </div>
+    <div class="h-full hidden lg:block">
+        <button 
+            class="general-button"
+            type="button"
+            (click)="resumeDownload()">
+            Resume
+            <i class="fa-solid fa-download"></i>
+        </button>
+    </div>
 
 
 </div>
 
 @if (navbarOpen) {
-  <div [@menuOpenCloseHeightAnimation] class="block lg:hidden">
-      <ul class="menu small">
-          @for (l of linksData; track $index) {
-              @if (l.isVisible) {
-                  <li>
-                      @if (l.isExternalLink) {
-                          <a 
-                          [href]="l.routeURLName" 
-                          target="_blank"
-                          [routerLinkActive]="['font-bold']"
-                          [routerLinkActiveOptions]="{exact: true}" 
-                          [title]="l.routeTooltipValue ?? l.routeLinkText"
-                          >{{ l.routeLinkText }}</a>
-                      }
-                      @else {
-                          <a 
-                          [routerLink]="l.routeURLName" 
-                          [routerLinkActive]="['font-bold']"
-                          [routerLinkActiveOptions]="{exact: true}" 
-                          [title]="l.routeTooltipValue ?? l.routeLinkText"
-                          >{{ l.routeLinkText }}</a>
-                      }
-                  </li>
-              }
-          }
-          <li>
-              <button 
-                  class="mx-auto general-button"
-                  type="button"
-                  (click)="resumeDownload()">
-                  Resume
-                  <i class="fa-solid fa-download"></i>
-              </button>                
-          </li>
-      </ul>
-  </div>
+    <div [@menuOpenCloseHeightAnimation] class="block lg:hidden">
+        <ul class="menu small">
+            @for (l of linksData; track $index) {
+                @if (l.isVisible) {
+                    <li>
+                        @if (l.isExternalLink) {
+                            <a 
+                            [href]="l.routeURLName" 
+                            target="_blank"
+                            [routerLinkActive]="['font-bold']"
+                            [routerLinkActiveOptions]="{exact: true}" 
+                            [title]="l.routeTooltipValue ?? l.routeLinkText"
+                            >{{ l.routeLinkText }}</a>
+                        }
+                        @else {
+                            <a 
+                            [routerLink]="l.routeURLName" 
+                            [routerLinkActive]="['font-bold']"
+                            [routerLinkActiveOptions]="{exact: true}" 
+                            [title]="l.routeTooltipValue ?? l.routeLinkText"
+                            >{{ l.routeLinkText }}</a>
+                        }
+                    </li>
+                }
+            }
+            <li>
+                <button 
+                    class="mx-auto general-button"
+                    type="button"
+                    (click)="resumeDownload()">
+                    Resume
+                    <i class="fa-solid fa-download"></i>
+                </button>                
+            </li>
+        </ul>
+    </div>
 }
