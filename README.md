@@ -6,7 +6,7 @@
 <h3 align="center"> A clean, beautiful, responsive, and 100% customizable portfolio template developed with Angular and SCSS! <h3>
 
 <p align="center"> 
-    <a href="https://angular-master-portfolio.web.app/" target="_blank">
+    <a href="https://dacoband-portfolio.vercel.app/" target="_blank">
     <img src="public/assets/images/ng-master-ss.png"></img>
   </a>
 </p>
@@ -21,7 +21,7 @@
 ✔️ Experience\
 ✔️ Education
 
-To view a live example, **[click here](https://angular-master-portfolio.web.app/)**
+To view a live example, **[click here](https://dacoband-portfolio.vercel.app/)**
 
 
 ## 🚀 Getting Started
@@ -35,7 +35,7 @@ Follow the official Angular documentation to [download and install Angular](http
 ### Clone and Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/dhruvilrathod/Angular-Master-Portfolio
+   git clone https://github.com/Dacoband/Angular-MyPortfolio/
    cd Angular-Master-Portfolio
    ```
 
@@ -69,42 +69,6 @@ Follow the official Angular documentation to [download and install Angular](http
 
 ---
 
-## 📦 Build and Deployment
-
-### Building the Application
-To create a production build of the project:
-```bash
-ng build
-```
-
-### Deploying to Firebase Hosting
-This project is hosted using **Firebase Hosting**. Follow these steps to deploy:
-
-1. **Create a Firebase Project**
-   - Visit [Firebase Console](https://console.firebase.google.com/) and create a new project.
-   - Add a web app to your Firebase project.
-
-2. **Modify Firebase Configurations**
-   - Use the existing Firebase configuration file in this project and update it with your project’s specific details.
-
-3. **Deploy the Project**
-   - Install the Firebase CLI:
-     ```bash
-     npm install -g firebase-tools
-     ```
-   - Log in to Firebase:
-     ```bash
-     firebase login
-     ```
-   - Initialize Firebase Hosting:
-     ```bash
-     firebase init
-     ```
-
-For more detailed instructions, refer to the [Firebase Hosting documentation](https://firebase.google.com/docs/hosting).
-
----
-
 ## 🛠 Technologies Used
 - **Angular**: [Learn more](https://angular.dev/)
 - **SCSS**: [Learn more](https://sass-lang.com/)
@@ -118,6 +82,3 @@ For more detailed instructions, refer to the [Firebase Hosting documentation](ht
 
 Happy Coding! 🎉
 
-# References 👏🏻
-
-- Some Design Ideas are taken from [Saad Pasta's Portfolio Project](https://github.com/saadpasta/developerFolio) and [Ashutosh Hathidara's Master Portfolio](https://github.com/ashutosh1919/masterPortfolio).

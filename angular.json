@@ -3,123 +3,123 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "angular-master-portfolio": {
-            "projectType": "application",
-            "schematics": {
-                "@schematics/angular:component": {
-                    "style": "scss"
+      "portfolio": {
+        "projectType": "application",
+        "schematics": {
+          "@schematics/angular:component": {
+            "style": "scss"
+          }
+        },
+        "root": "",
+        "sourceRoot": "src",
+        "prefix": "app",
+        "architect": {
+          "build": {
+            "builder": "@angular-devkit/build-angular:application",
+            "options": {
+              "outputPath": "dist/portfolio",
+              "index": "src/index.html",
+              "browser": "src/main.ts",
+              "polyfills": [
+                "zone.js"
+              ],
+              "tsConfig": "tsconfig.app.json",
+              "inlineStyleLanguage": "scss",
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "public"
                 }
+              ],
+              "styles": [
+                "src/styles.scss",
+                "node_modules/aos/dist/aos.css"
+              ],
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "public"
+                ]
+              },
+              "scripts": [
+                "node_modules/aos/dist/aos.js"
+              ],
+              "allowedCommonJsDependencies": [
+                "aos"
+              ]
             },
-            "root": "",
-            "sourceRoot": "src",
-            "prefix": "app",
-            "architect": {
-                "build": {
-                    "builder": "@angular-devkit/build-angular:application",
-                    "options": {
-                        "outputPath": "dist/angular-master-portfolio",
-                        "index": "src/index.html",
-                        "browser": "src/main.ts",
-                        "polyfills": [
-                            "zone.js"
-                        ],
-                        "tsConfig": "tsconfig.app.json",
-                        "inlineStyleLanguage": "scss",
-                        "assets": [
-                            {
-                                "glob": "**/*",
-                                "input": "public"
-                            }
-                        ],
-                        "styles": [
-                            "src/styles.scss",
-                            "node_modules/aos/dist/aos.css"
-                        ],
-                        "stylePreprocessorOptions": {
-                            "includePaths": [
-                                "public"
-                            ]
-                        },
-                        "scripts": [
-                            "node_modules/aos/dist/aos.js"
-                        ],
-                        "allowedCommonJsDependencies": [
-                            "aos"
-                        ]
-                    },
-                    "configurations": {
-                        "production": {
-                            "budgets": [
-                                {
-                                    "type": "initial",
-                                    "maximumWarning": "50MB",
-                                    "maximumError": "50MB"
-                                },
-                                {
-                                    "type": "anyComponentStyle",
-                                    "maximumWarning": "50MB",
-                                    "maximumError": "50MB"
-                                }
-                            ],
-                            "outputHashing": "all"
-                        },
-                        "development": {
-                            "optimization": false,
-                            "extractLicenses": false,
-                            "sourceMap": true,
-                            "fileReplacements": [
-                                {
-                                    "replace": "src/environments/environment.ts",
-                                    "with": "src/environments/environment.development.ts"
-                                }
-                            ]
-                        }
-                    },
-                    "defaultConfiguration": "production"
-                },
-                "serve": {
-                    "builder": "@angular-devkit/build-angular:dev-server",
-                    "configurations": {
-                        "production": {
-                            "buildTarget": "angular-master-portfolio:build:production"
-                        },
-                        "development": {
-                            "buildTarget": "angular-master-portfolio:build:development"
-                        }
-                    },
-                    "defaultConfiguration": "development"
-                },
-                "extract-i18n": {
-                    "builder": "@angular-devkit/build-angular:extract-i18n"
-                },
-                "test": {
-                    "builder": "@angular-devkit/build-angular:karma",
-                    "options": {
-                        "polyfills": [
-                            "zone.js",
-                            "zone.js/testing"
-                        ],
-                        "tsConfig": "tsconfig.spec.json",
-                        "inlineStyleLanguage": "scss",
-                        "assets": [
-                            {
-                                "glob": "**/*",
-                                "input": "public"
-                            }
-                        ],
-                        "styles": [
-                            "src/styles.scss",
-                            "node_modules/aos/dist/aos.css"
-                        ],
-                        "scripts": [
-                            "node_modules/aos/dist/aos.js"
-                        ]
-                    }
+            "configurations": {
+              "production": {
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "50MB",
+                    "maximumError": "50MB"
+                  },
+                  {
+                    "type": "anyComponentStyle",
+                    "maximumWarning": "50MB",
+                    "maximumError": "50MB"
+                  }
+                ],
+                "outputHashing": "all"
+              },
+              "development": {
+                "optimization": false,
+                "extractLicenses": false,
+                "sourceMap": true,
+                "fileReplacements": [
+                  {
+                    "replace": "src/environments/environment.ts",
+                    "with": "src/environments/environment.development.ts"
+                  }
+                ]
+              }
+            },
+            "defaultConfiguration": "production"
+          },
+          "serve": {
+            "builder": "@angular-devkit/build-angular:dev-server",
+            "configurations": {
+              "production": {
+                "buildTarget": "portfolio:build:production"
+              },
+              "development": {
+                "buildTarget": "portfolio:build:development"
+              }
+            },
+            "defaultConfiguration": "development"
+          },
+          "extract-i18n": {
+            "builder": "@angular-devkit/build-angular:extract-i18n"
+          },
+          "test": {
+            "builder": "@angular-devkit/build-angular:karma",
+            "options": {
+              "polyfills": [
+                "zone.js",
+                "zone.js/testing"
+              ],
+              "tsConfig": "tsconfig.spec.json",
+              "inlineStyleLanguage": "scss",
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "public"
                 }
+              ],
+              "styles": [
+                "src/styles.scss",
+                "node_modules/aos/dist/aos.css"
+              ],
+              "scripts": [
+                "node_modules/aos/dist/aos.js"
+              ]
             }
+          }
         }
+      }
     },
     "cli": {
-      "analytics": "72b4fa3d-f65b-4390-92c4-93b38c2af2d8"
+      "analytics": "72537fd2-c76f-4293-b4c0-9cce6fc4ab7f"
     }
-}
+  }
