@@ -1,5 +1,5 @@
 <p align="center"> 
-    <img src="public/assets/images/ng-master.png" align="center" height="150"></img>
+    <img src="public/assets/images/higuy.png" align="center" height="150"></img>
 </p>
 
 <h1 align="center"> Angular Master Portfolio 🔥 </h1> 
