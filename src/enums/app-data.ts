@@ -42,28 +42,16 @@ const SocialMediaLinks: ExternalSite[] = [
 // Fullstack skills
 const FullstackSkills: ExternalSite[] = [
     {
+        name: ".NET",
+        link: "https://dotnet.microsoft.com/",
+        simpleIconName: "dotnet",
+        backgroundColor: "#512BD4",
+    },
+    {
         name: "Angular",
         link: "https://angular.dev/",
         simpleIconName: "angular",
         backgroundColor: "#ea2848",
-    },
-    {
-        name: "HTML5",
-        link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-        simpleIconName: "html5",
-        backgroundColor: "#E34F26",
-    },
-    {
-        name: "CSS3",
-        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-        simpleIconName: "css3",
-        backgroundColor: "#1572B6",
-    },
-    {
-        name: "Sass",
-        link: "https://sass-lang.com/",
-        simpleIconName: "sass",
-        backgroundColor: "#CC6699",
     },
     {
         name: "NodeJS",
@@ -72,40 +60,28 @@ const FullstackSkills: ExternalSite[] = [
         backgroundColor: "#5FA04E",
     },
     {
-        name: "JavaScript",
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-        simpleIconName: "javascript",
-        backgroundColor: "#F7DF1E",
+        name: "React",
+        link: "https://react.dev/",
+        simpleIconName: "react",
+        backgroundColor: "#61DAFB",
     },
     {
-        name: "Angular",
-        link: "https://angular.dev/",
-        simpleIconName: "angular",
-        backgroundColor: "#0F0F11",
+        name: "LLVM",
+        link: "https://llvm.org/",
+        simpleIconName: "llvm",
+        backgroundColor: "#262D3A",
     },
     {
-        name: "ThreeJS",
-        link: "https://threejs.org/",
-        simpleIconName: "threedotjs",
-        backgroundColor: "#000000",
+        name: "NGINX",
+        link: "https://nginx.org/en/",
+        simpleIconName: "nginx",
+        backgroundColor: "#009639",
     },
     {
-        name: "Tailwind CSS",
-        link: "https://tailwindcss.com/",
-        simpleIconName: "tailwindcss",
-        backgroundColor: "#06B6D4",
-    },
-    {
-        name: "Bootstrap",
-        link: "https://getbootstrap.com/",
-        simpleIconName: "bootstrap",
-        backgroundColor: "#7952B3",
-    },
-    {
-        name: ".NET",
-        link: "https://dotnet.microsoft.com/",
-        simpleIconName: "dotnet",
-        backgroundColor: "#512BD4",
+        name: "Unity",
+        link: "https://brand.unity.com/",
+        simpleIconName: "unity",
+        backgroundColor: "#262D3A",
     },
 ];
 
@@ -115,7 +91,7 @@ const FullstackSection: SkillSection = {
     imagePath: AssetPaths.FULL_STACK_DEVELOPMENT_SVG,
     skillLinks: FullstackSkills,
     skillsList: [
-        "Building responsive website front-end using Angular",
+        "Building responsive website front-end using Angular, React-Vite",
         "Developing custom and interactive 3D websites",
         "Creating application backend in Node, NestJS & .NET",
         "Managing data safely with SQL Server, PostgreSQL, MongoDB and OracleDB",
@@ -161,16 +137,10 @@ const CloudSkills: ExternalSite[] = [
         backgroundColor: "#1488C6",
     },
     {
-        name: "Render",
-        link: "https://render.com/",
-        simpleIconName: "render",
-        backgroundColor: "#000000",
-    },
-    {
-        name: "Heroku",
-        link: "https://www.heroku.com/",
-        simpleIconName: "heroku",
-        backgroundColor: "#430098",
+        name: "MySQL",
+        link: "https://www.mysql.com/",
+        simpleIconName: "mysql",
+        backgroundColor: "#4479A1",
     },
 ];
 
@@ -180,20 +150,15 @@ const CloudSection: SkillSection = {
     imagePath: AssetPaths.CLOUD_INFRASTRUCTURE_SVG,
     skillLinks: CloudSkills,
     skillsList: [
-        "Experience working on multiple cloud platforms including GCP, AWS, FireBase, and Render",
-        "Hosting and maintaining websites on FireBase hosting and GoDaddy along with integration of databases",
+        "Experience working on multiple cloud platforms including GCP, AWS, and FireBase",
+        "Hosting and maintaining websites on FireBase hosting",
+        "Hosting and maintaining server on VPS Cloud",
         "Setting up email triggers and Googlesheet integration for streamline client inquiry",
     ]
 }
 
 // Design skills
 const DesignSkills: ExternalSite[] = [
-    {
-        name: "Adobe XD",
-        link: "https://adobexdplatform.com/",
-        simpleIconName: "adobexd",
-        backgroundColor: "#FF2BC2",
-    },
     {
         name: "Figma",
         link: "https://figma.com/",
@@ -207,10 +172,10 @@ const DesignSkills: ExternalSite[] = [
         backgroundColor: "#FF7C00",
     },
     {
-        name: "Adobe Photoshop",
-        link: "https://www.adobe.com/products/photoshop.html/",
-        simpleIconName: "adobephotoshop",
-        backgroundColor: "#001e36",
+        name: "Canva",
+        link: "https://www.canva.com/",
+        simpleIconName: "canva",
+        backgroundColor: "#00C4CC",
     },
 ];
 
@@ -249,55 +214,15 @@ const PersonalProjects: ProjectSection = {
     sectionSubtitle: "🚀 Showcasing innovative solutions and real-world applications built with cutting-edge technologies.",
     entities: [
         {
-            title: "Web-Based 3D IFC File Viewer",
-            coverImagePath: AssetPaths.PROJECT_THREEJS_IFC_VIEWER,
-            liveLink: "https://dhruvilrathod.github.io/webifcviewer/",
-            githubLink: "https://github.com/dhruvilrathod/three_ifc_angular",
-            description: "🧱 This tool enables seamless visualization of IFC files in your browser. Toggle elements, explore real-time details by hovering, search and highlight elements, and interact with ease for a dynamic 3D experience.",
-            techStack: ["Angular", "ThreeJS", "ExpressJS", "Heroku"],
-            year: 2022
-        },
-        {
-            title: "Customizable Multi-Select Dropdown",
-            coverImagePath: AssetPaths.PROJECT_CUSTOM_DROPDOWN,
-            githubLink: "https://github.com/dhruvilrathod/custom-dropdown/tree/resource-tree-utility",
-            description: "🌲 An Angular-based, asynchronous multi-select dropdown designed for tree-structured data with custom validation. It's a powerful replacement for jQuery's Select2.",
-            techStack: ["Angular", "TypeScript", "SCSS"],
-            year: 2023,
-            branch: "resource-tree-utility"
-        },
-        {
-            title: "Learning Management System",
-            coverImagePath: AssetPaths.PROJECT_LMS_APP,
-            githubLink: "https://github.com/dhruvilrathod/lms-asite",
-            description: "📚 A production-grade frontend for a Learning Management System, designed with scalability in mind to deliver a seamless and efficient user experience.",
-            techStack: ["Angular", "PrimeNG", "Tailwind", "Figma"],
-            year: 2023
-        },
-        {
-            title: "Angular + NestJS Boilerplate",
-            coverImagePath: AssetPaths.PROJECT_ANGULAR_NEST_DOCKER,
-            githubLink: "https://github.com/dhruvilrathod/sample-angular-nest",
-            description: "🛠️ A production-grade boilerplate integrating Angular, NestJS, and Nginx for seamless fullstack development. Perfect for kickstarting robust and scalable web applications.",
-            techStack: ["Angular", "NestJS", "NgINX", "Docker"],
-            year: 2023
-        },
-        {
-            title: "Hospital Management System Dashboard",
-            coverImagePath: AssetPaths.PROJECT_HMS_APP,
-            githubLink: "https://github.com/freelancer-dhruvil/hms-demo",
-            description: "🏥 Transformed Figma designs into a fully functional, user-friendly dashboard for a Hospital Management System, ensuring precision and intuitive interface.",
-            techStack: ["Angular", "PrimeNG", "PrimeFlex", "Figma"],
+            title: "Mr.Salon",
+            coverImagePath: AssetPaths.PROJECT_MR_SALON,
+            liveLink: "https://fe-mr-salon.vercel.app/",
+            githubLink: "https://github.com/Dacoband/Mr.Salon",
+            description: "🧱 The Hair Salon Booking App was developed to address the challenges customers face when trying to find and book appointments at hair salons.",
+            techStack: [".NET", "React-Vite", "MongoDB", "Docker"],
             year: 2024
         },
-        {
-            title: "Cross-Platform Music Player",
-            coverImagePath: AssetPaths.PROJECT_MUSIC_PLAYER,
-            githubLink: "https://github.com/dhruvilrathod/music_player",
-            description: "🎵 Developed with Angular and NestJS, this music player evolved into a fullstack app and was wrapped with ElectronJS for a seamless desktop experience.",
-            techStack: ["Angular", "NestJS", "ElectronJS", "ExpressJS"],
-            year: 2023
-        }
+        
     ]
 }
 
@@ -347,16 +272,16 @@ const JobExperience: ExperienceSection = {
     experienceSectionTitle: "Work Experience",
     experiences: [
         {
-            orgLink: "https://acquireconveyancing.com.au/",
-            orgLogoPath: AssetPaths.WORK_ACQUIRE_LOGO,
-            orgName: "Acquire Conveyancing",
+            orgLink: "https://www.linkedin.com/company/pytheralab/",
+            orgLogoPath: AssetPaths.WORK_PYTHERA_LOGO,
+            orgName: "Pythera AI",
             positions: [
                 {
-                    positionName: "Conveyancing Assistant",
-                    duration: "Apr 2024 - Present",
-                    location: "Adelaide, SA",
+                    positionName: ".NET Developer",
+                    duration: "May 2024 - Sep 2024",
+                    location: "Ho Chi Minh City, VN",
                     locationType: "On-Site",
-                    jobType: "Part-time",
+                    jobType: "Internship",
                     workPoints: [
                         "Ensured secure management of sensitive data with top-notch IT support. 🔒",
                         "Streamlined property searches by liaising with government agencies. 🏡",
@@ -366,25 +291,6 @@ const JobExperience: ExperienceSection = {
                 }
             ]
         },
-        {
-            orgLink: "https://www.asite.com/",
-            orgLogoPath: AssetPaths.WORK_ASITE_LOGO,
-            orgName: "Asite Solution",
-            positions: [
-                {
-                    positionName: "Jr Software Engineer",
-                    duration: "Jun 2023 - Mar 2024",
-                    location: "Ahmedabad, India",
-                    locationType: "Hybrid",
-                    jobType: "Full-time",
-                    workPoints: [
-                        "Built the Issue Tracker feature for the cBIM unit, integrating 30+ Angular components like side pane, image carousel, and quill editor. 🚀📋",
-                        "Designed a robust Angular reactive form and a customizable async dropdown for efficient file-folder tree searches, enhancing Record Retention Policy. 📂🔍",
-                        "Debugged and unit-tested code using Karma & Jasmine, achieving an impressive 96% coverage. 🐞✅",
-                    ]
-                }
-            ]
-        }
     ]
 }
 
@@ -448,7 +354,7 @@ const FreelancingExperience: ExperienceSection = {
         },
         {
             orgLink: "https://acquireconveyancing.com.au/",
-            orgLogoPath: AssetPaths.WORK_ACQUIRE_LOGO,
+            orgLogoPath: AssetPaths.WORK_PYTHERA_LOGO,
             orgName: "Acquire Conveyancing",
             positions: [
                 {
@@ -581,19 +487,17 @@ const BachelorsDegree: EducationSection = {
 }
 
 const MastersDegree: EducationSection = {
-    degreeName: "Bachelor of Information Technology",
-    majorName: "Software Engineering",
-    duration: "Sep 2021 - Sep 2025",
-    universityName: "FPT University",
-    campusName: "Ho Chi Minh Campus",
-    logoImagePath: AssetPaths.EDUCATION_FPTU_LOGO,
-    gpa: "7.14 / 10",
-    websiteLink: "https://daihoc.fpt.edu.vn/",
-    studyPoints: [
-        "Built expertise in Security Principles, Network Infrastructure, and Risk Management, laying a solid foundation in cybersecurity fundamentals. 🔐",
-        "Gained deep knowledge in Security Architecture, Network Security, and Critical Infrastructure Protection, alongside insights into Cyber Criminal Behavior and Australian Cyber Law. ⚙️🛡️",
-        "Developed strategic skills through Consultancy, Enterprise Security, and hands-on labs experience with tech-giants including Cisco and FortiGate. 🚀",
-    ]
+        degreeName: "etc",
+        majorName: "etc",
+        duration: "etc",
+        universityName: "etc",
+        campusName: "etc",
+        logoImagePath: AssetPaths.EDUCATION_FPTU_LOGO,
+        gpa: "etc",
+        websiteLink: "etc",
+        studyPoints: [
+            "etc"
+        ]
 }
 
 

@@ -2,7 +2,7 @@ export interface Position {
     positionName: string,
     duration: string,
     location?: string,
-    jobType?: "Full-time" | "Part-time" | "Casual" | "Contract",
+    jobType?: "Full-time" | "Part-time" | "Casual" | "Contract" | "Internship",
     locationType?: "On-Site" | "Remote" | "Hybrid",
     workPoints: string[],
 }
