@@ -21,6 +21,8 @@
             <i class="text-2xl fa-solid fa-bars"></i>
     </button>
 
+    
+
     <div class="hidden lg:block grow">
         <ul class="menu">
             @for (l of linksData; track $index) {
@@ -52,7 +54,12 @@
             }
         </ul>
     </div>
-
+    <button 
+        class="general-button"
+        type="button"
+        (click)="toggleMode()">
+        <i class="fa-solid fa-{{ isDarkMode ? 'sun' : 'moon' }}"></i>
+    </button>
     <div class="h-full hidden lg:block">
         <button 
             class="general-button"

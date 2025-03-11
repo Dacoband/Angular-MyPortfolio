@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#e5ecf6;
+    color: var(--text-color);
 
     .logo-name-container {
         display: block;
@@ -39,7 +39,7 @@
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
-    100% { opacity: 1; }
+    100% { opacity: 0.5; }
 }
 
 .honk-uniquifier {
@@ -59,7 +59,7 @@ ul.menu {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    color: #e5ecf6;
+    color: var(--text-color);
     height: 100%;
 
     &.small {
@@ -80,7 +80,7 @@ ul.menu {
             text-align: center;
 
             &:hover {
-                background: linear-gradient(150deg, #7081b7 0%, #1c1c1c 3%, #86b2c3 90%);;
+                background: var(--background-hover);
                 display: block;
                 border-radius: 1.5ch;
                 text-decoration: none;

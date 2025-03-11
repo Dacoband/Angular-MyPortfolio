@@ -60,13 +60,33 @@ code {
         monospace;
 }
 
+:root {
+    --background-gradient: linear-gradient(135deg, #000000 0%, #0A1D56 50%, #FFFFFF 100%); /* Gradient ngược lại */
+    --text-color:  #FFFFFF;
+    --greeting-text: #deecee;
+    --greeting-nickname:  #8d9394;
+    --greeting-text-p: $theme-secondary;
+    --background-hover: linear-gradient(150deg, #7081b7 0%, #1c1c1c 3%, #86b2c3 90%);
+}
+
+/* Light mode: khi class 'dark-mode' được thêm vào body */
+body.dark-mode {
+    --background-gradient: linear-gradient(315deg, #FFFFFF 0%, #E6F0FA 50%, #c5e8f5 100%); /* Gradient gốc của bạn */
+    --text-color:  #000000;
+    --greeting-text: #060663;
+    --greeting-nickname:  #868de3;
+    --greeting-text-p: #9ab2c4;
+    --background-hover: linear-gradient(150deg, #b7bac2 0%, #686767 3%, #86b2c3 90%);
+}
+
 html,
 body {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background: linear-gradient(135deg, #000000 0%, #0A1D56 50%, #FFFFFF 100%);
-    
+    background: var(--background-gradient);
+    color: var(--text-color);
     min-height: 100vh;
+    transition: background 0.5s ease-in-out;
 }
 
 body {
@@ -99,6 +119,7 @@ body {
     text-decoration: none;
     transition: all 200ms;
     text-align: center;
+    color: var(--text-color);
 
     &:hover {
         background-color: $theme-blue;

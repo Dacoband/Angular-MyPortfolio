@@ -31,7 +31,7 @@
 }
 
 .greeting-text {
-    color: #deecee;
+    color: var(--greeting-text);
     margin-top: 80px;
     font-size: 70px;
     line-height: 1.1;
@@ -39,13 +39,13 @@
 }
 
 .greeting-nickname {
-    color: #cfe7ea;
+    color: var(--greeting-nickname);
     font-size: 30px;
     font-family: "Google Sans Bold Italic";
 }
 
 .greeting-text-p {
-    color: $theme-secondary;
+    color: var(--greeting-text-p);
     font-size: 40px;
     line-height: 50px;
     margin-right: 40px;

@@ -26,6 +26,7 @@ import { AssetPaths } from '../../../enums/asset-paths.enum';
 export class HeaderComponent implements OnInit {
 
     displayedLogoName: string = '';
+    isDarkMode: boolean = false;
     public navbarOpen = false;
     public linksData = RoutesData;
     public appData = AppConfig;
@@ -43,11 +44,13 @@ export class HeaderComponent implements OnInit {
 
     ngOnInit(): void {
         this.typeWriterEffect();
+        this.loadModePreference();
     }
 
     //hàm gõ chữ
     typeWriterEffect(): void {
         const text = this.appData.logoName;
+        
         let index = 0;
         const speed = 150; // Tốc độ gõ/xóa
         const pauseDuration = 200; // Thời gian dừng giữa các lần lặp
@@ -71,6 +74,30 @@ export class HeaderComponent implements OnInit {
         };
 
         type();
+    }
+
+    // Chuyển đổi giữa light mode và dark mode
+    toggleMode(): void {
+        this.isDarkMode = !this.isDarkMode;
+        if (this.isDarkMode) {
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.remove('dark-mode');
+        }
+        // Lưu chế độ vào localStorage
+        localStorage.setItem('theme', this.isDarkMode ? 'dark' : 'light');
+    }
+
+    // Tải chế độ đã lưu từ localStorage
+    private loadModePreference(): void {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            this.isDarkMode = true;
+            document.body.classList.add('dark-mode');
+        } else {
+            this.isDarkMode = false;
+            document.body.classList.remove('dark-mode');
+        }
     }
 
     toggleNavbar() {
