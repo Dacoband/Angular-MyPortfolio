@@ -1,10 +1,12 @@
 @import "../../../css/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Mogra&display=swap');
 
 .header {
 
     display: flex;
     align-items: center;
     justify-content: center;
+    color:#e5ecf6;
 
     .logo-name-container {
         display: block;
@@ -15,12 +17,41 @@
         line-height: normal;
 
         .logo-name {
-            font-family: "Agustina Regular";
-            font-weight: bold;
+            // font-family: "Mogra", system-ui;
+            // font-weight: 400;
+            // font-style: normal;
             padding: 0;
             color: $theme-blue;
+            position: relative;
+            //display: inline-block;
+                &::after {
+                    font-family: "Morga", system-ui;
+                    font-weight: 400;
+                    font-style: normal;
+                    display: inline-block;
+                    content: '|'; // Con trỏ nhấp nháy
+                    position: absolute;
+                    right: 5px;
+                    animation: blink 0.7s infinite;
+                }
         }
     }
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.honk-uniquifier {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 25,
+        "SHLN" 15;
+    color-scheme: #b8a7a3;
 }
 
 ul.menu {
@@ -29,6 +60,7 @@ ul.menu {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    color: #e5ecf6;
     height: 100%;
 
     &.small {
@@ -43,14 +75,17 @@ ul.menu {
             padding: 1rem;
             display: block;
             text-decoration: none;
-            transition: all 200ms;
-            color: $theme-blue;
+            border-radius: 0;
+            transition: background 200ms ease-in-out, border-radius 200ms ease-in-out;
+            opacity: 0.7;
             text-align: center;
 
             &:hover {
-                background-color: #A6E1FA;
+                background: linear-gradient(150deg, #7081b7 0%, #1c1c1c 3%, #86b2c3 90%);;
                 display: block;
+                border-radius: 1.5ch;
                 text-decoration: none;
+                opacity: 1;
             }
         }
     }

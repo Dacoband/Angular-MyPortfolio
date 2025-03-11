@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { menuOpenCloseAnimation, menuOpenCloseHeightAnimation } from '../../../animations/bruger-menu.animation';
 import { RoutesData } from '../../../enums/routes-data.enum';
@@ -23,8 +23,9 @@ import { AssetPaths } from '../../../enums/asset-paths.enum';
     templateUrl: './header.component.html',
     styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
+    displayedLogoName: string = '';
     public navbarOpen = false;
     public linksData = RoutesData;
     public appData = AppConfig;
@@ -38,6 +39,38 @@ export class HeaderComponent {
                 this.navbarOpen && this.toggleNavbar();
             }
         });
+    }
+
+    ngOnInit(): void {
+        this.typeWriterEffect();
+    }
+
+    //hàm gõ chữ
+    typeWriterEffect(): void {
+        const text = this.appData.logoName;
+        let index = 0;
+        const speed = 150; // Tốc độ gõ/xóa
+        const pauseDuration = 200; // Thời gian dừng giữa các lần lặp
+
+        const type = () => {
+            if (index < text.length) {
+                this.displayedLogoName += text.charAt(index);
+                index++;
+                setTimeout(type, speed);
+            } else {
+                setTimeout(() => erase(), pauseDuration); // Sau khi gõ xong, bắt đầu xóa
+            }
+        };
+        const erase = () => {
+            if (this.displayedLogoName.length > 0) {
+                this.displayedLogoName = this.displayedLogoName.slice(0, -1);
+                setTimeout(erase, speed / 1.5); // Xóa nhanh hơn gõ
+            } else {
+                setTimeout(() => this.typeWriterEffect(), pauseDuration); // Bắt đầu lại
+            }
+        };
+
+        type();
     }
 
     toggleNavbar() {
