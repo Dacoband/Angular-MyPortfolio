@@ -8,7 +8,7 @@
 }
 
 .skills-header {
-    color: $theme-blue;
+    color: var(--skill-header);
     font-size: 60px;
     font-weight: bold;
     line-height: normal;
@@ -19,7 +19,7 @@
 .skills-text {
     font-size: 1.5rem;
     line-height: 2rem;
-    color: $theme-secondary;
+    color: var(--skills-text);
     margin: 1rem 0;
     text-align: left;
 }
@@ -45,7 +45,7 @@
 }
 
 .skills-heading {
-    color: $theme-blue;
+    color: var(--skills-heading);
     font-size: 56px;
     font-weight: 400;
     font-family: "Google Sans Regular";

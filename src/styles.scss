@@ -61,21 +61,29 @@ code {
 }
 
 :root {
-    --background-gradient: linear-gradient(135deg, #000000 0%, #0A1D56 50%, #FFFFFF 100%); /* Gradient ngược lại */
+    --background-gradient: linear-gradient(135deg, #000000 0%, #051b5b 50%, #1b5972 100%); /* Gradient ngược lại */
+    --footer-text: #26273b;
     --text-color:  #FFFFFF;
     --greeting-text: #deecee;
     --greeting-nickname:  #8d9394;
     --greeting-text-p: $theme-secondary;
+    --skill-header: #89c9d4;
+    --skills-text: rgb(168, 182, 213);
+    --skills-heading:#72acb8;
     --background-hover: linear-gradient(150deg, #7081b7 0%, #1c1c1c 3%, #86b2c3 90%);
 }
 
 /* Light mode: khi class 'dark-mode' được thêm vào body */
 body.dark-mode {
-    --background-gradient: linear-gradient(315deg, #FFFFFF 0%, #E6F0FA 50%, #c5e8f5 100%); /* Gradient gốc của bạn */
+    --background-gradient: linear-gradient(315deg, #FFFFFF 0%, #a0c5ea 50%, #aad9eb 100%); /* Gradient gốc của bạn */
     --text-color:  #000000;
+    --footer-text: #26273b;
     --greeting-text: #060663;
     --greeting-nickname:  #868de3;
     --greeting-text-p: #9ab2c4;
+    --skill-header: #5a5f9b;
+    --skills-text: #5c7a81;
+    --skills-heading:#0b3842;
     --background-hover: linear-gradient(150deg, #b7bac2 0%, #686767 3%, #86b2c3 90%);
 }
 
