@@ -232,36 +232,12 @@ const FreelancingProjects: ProjectSection = {
     sectionSubtitle: "🚀 Transforming Ideas into Digital Solutions: Tailored Websites, Custom CMS, and More!",
     entities: [
         {
-            title: "South Australia Tiling",
-            coverImagePath: AssetPaths.PROJECT_SA_TILING,
-            liveLink: "https://southaustraliatiling.com.au/",
-            description: "🚀 Built with SSR and SSG to showcase a South Australian tiling and bathroom renovation business, enhancing their online presence and visibility.",
-            techStack: ["Angular 19", "SSR/SSG", "NestJS", "Firebase"],
+            title: "Eventa",
+            coverImagePath: "",
+            liveLink: "https://www.eventaa.me/",
+            description: "🚀 Website management Event professionals and event organizers, offering a platform for event management and promotion.",
+            techStack: ["React Vite", ".NET 8", "Firebase", "AppWrite"],
             year: 2025
-        },
-        {
-            title: "Kiwi Finance",
-            coverImagePath: AssetPaths.PROJECT_KIWI_FINANCE,
-            liveLink: "https://kiwifinance.com.au/",
-            description: "💰 Developed a tailored website for a new Perth-based finance and mortgage broking business, combining modern design with a focus on accessibility and client engagement.",
-            techStack: ["Angular", "MongoDB", "NestJS", "Firebase"],
-            year: 2025
-        },
-        {
-            title: "RAS Finance Website + CMS",
-            coverImagePath: AssetPaths.PROJECT_RAS_FINANCE,
-            liveLink: "https://rasfinance.com.au/",
-            description: "📈 Designed a bespoke website for a leading South Australia-based finance and mortgage broking business, showcasing services with a sleek, client-focused design.",
-            techStack: ["Angular", "MongoDB", "NestJS", "Firebase"],
-            year: 2024
-        },
-        {
-            title: "Acquire Conveyancing Website",
-            coverImagePath: AssetPaths.PROJECT_ACQUIRE_CONVEYANCING,
-            liveLink: "https://acquireconveyancing.com.au/",
-            description: "🏡 Crafted a tailored website for a South Australia-based conveyancing business, delivering a professional online presence with user-friendly design and local appeal.",
-            techStack: ["Angular", "Tailwind", "Firebase"],
-            year: 2023
         },
     ]
 }
@@ -316,61 +292,6 @@ const FreelancingExperience: ExperienceSection = {
                 }
             ]
         },
-        {
-            orgLink: "https://kiwifinance.com.au/",
-            orgLogoPath: AssetPaths.WORK_KIWI_LOGO,
-            orgName: "Kiwi Finance",
-            positions: [
-                {
-                    positionName: "Professional Freelancer",
-                    duration: "2025",
-                    location: "Perth, WA",
-                    locationType: "Remote",
-                    jobType: "Contract",
-                    workPoints: [
-                        "Designed and developed an SEO-friendly website with financial calculators, and a custom contact form tailored to Astute Financial's requirements. 🌐📊",
-                        "Streamlined data collection and client inquiries by integrating the contact form with Google Sheets and Gmail. 📋",
-                    ]
-                }
-            ]
-        },
-        {
-            orgLink: "https://rasfinance.com.au/",
-            orgLogoPath: AssetPaths.WORK_RAS_LOGO,
-            orgName: "RAS Finance",
-            positions: [
-                {
-                    positionName: "Professional Freelancer",
-                    duration: "2024",
-                    location: "Adelaide, SA",
-                    locationType: "Hybrid",
-                    jobType: "Contract",
-                    workPoints: [
-                        "Built a dynamic website featuring financial calculators, a CMS for articles, and a sleek contact form. 📊📝",
-                        "Streamlined client inquiries by integrating the contact form with Google Sheets and Gmail. 📧📋✨",
-                    ]
-                }
-            ]
-        },
-        {
-            orgLink: "https://acquireconveyancing.com.au/",
-            orgLogoPath: AssetPaths.WORK_PYTHERA_LOGO,
-            orgName: "Acquire Conveyancing",
-            positions: [
-                {
-                    positionName: "Professional Freelancer",
-                    duration: "2023",
-                    location: "Adelaide, SA",
-                    locationType: "Remote",
-                    jobType: "Contract",
-                    workPoints: [
-                        "Crafted a professional logo, business cards, and responsive website using Illustrator. 🎨💼",
-                        "Set up a custom domain email and Office 365 with SharePoint for seamless operations. 📧🔗",
-                        "Developed and hosted an SEO-friendly website with a contact form to boost online presence. 🌐📈",
-                    ]
-                }
-            ]
-        },
     ]
 }
 
@@ -379,49 +300,21 @@ const InternshipExperience: ExperienceSection = {
     experienceSectionTitle: "Internships",
     experiences: [
         {
-            orgLink: "https://asite.com/",
-            orgLogoPath: AssetPaths.WORK_ASITE_LOGO,
-            orgName: "Asite Solution",
+            orgLink: "https://www.linkedin.com/company/pytheralab/",
+            orgLogoPath: AssetPaths.WORK_PYTHERA_LOGO,
+            orgName: "Pythera AI",
             positions: [
                 {
-                    positionName: "UI Developer Intern",
-                    duration: "Feb 2023 - May 2023",
-                    location: "Ahmedabad, India",
-                    locationType: "Hybrid",
-                    jobType: "Full-time",
-                    workPoints: [
-                        "Led an 11-member team to design and implement the frontend architecture of an LMS using Angular, following the latest methodologies and best practices. 🚀💻",
-                        "Gained expertise in Angular, jQuery, SCSS, and DSA through personalized training and hands-on assignments during the internship. 🌟📊✨",
-                    ]
-                },
-                {
-                    positionName: "Software Engineering Intern",
-                    duration: "Jun 2022 — Jul 2022",
-                    location: "Ahmedabad, India",
+                    positionName: ".NET Developer Intern",
+                    duration: "May 2024 - Sep 2024",
+                    location: "Ho Chi Minh City, VietNam",
                     locationType: "On-Site",
                     jobType: "Full-time",
                     workPoints: [
-                        "Developed an innovative 3D IFC file viewer using Three.js, applying DSA concepts to create a tree-like structure for exploring model internals. 🌐🌳📐",
-                        "Deployed the Node.js backend on Heroku and hosted the frontend on GitHub Pages for seamless accessibility. 🚀💻✨",
-                    ]
-                }
-            ]
-        },
-        {
-            orgLink: "https://workxmate.com/",
-            orgLogoPath: AssetPaths.WORK_WORKXMATE_LOGO,
-            orgName: "WorkXMate Technologies Pvt. Ltd.",
-            positions: [
-                {
-                    positionName: "Angular Developer Internship",
-                    duration: "Feb 2022 — Mar 2022",
-                    location: "Noida, India",
-                    locationType: "Remote",
-                    jobType: "Part-time",
-                    workPoints: [
-                        "Designed and implemented an optimized, cross-browser-compatible Attendance Management Module. 🌐✔️",
-                        "Built a RESTful Node.js server integrated with Oracle DB for seamless code migration. 🚀📊",
-                        "Developed intuitive web forms with robust validation and error handling for a smooth user experience. 🖋️⚙️✨",
+                        "Ensured secure management of sensitive data with top-notch IT support. 🔒",
+                        "Streamlined property searches by liaising with government agencies. 🏡",
+                        "Prepared legal documents like Cooling Off Forms, Nominations, and Addendums. 📝",
+                        "Optimized software workflows with precise data entry and customized templates in CATS and PEXA. ⚙️",
                     ]
                 }
             ]
@@ -434,13 +327,13 @@ const CommunityInvolvement: ProjectSection = {
     sectionTitle: "Community Involvement",
     entities: [
         {
-            liveLink: "https://adventofcode.com/",
-            coverImagePath: AssetPaths.ACHIEVEMENT_AOC_PIC,
-            techStack: ["Python"],
-            title: "Advent of Code 2024",
-            description: "📅 Completed all Advent of Code 2024 problems within a personal deadline of 1 day each, showcasing strong DSA and problem-solving skills.🎯",
+            liveLink: "",
+            coverImagePath: "",
+            techStack: ["C++"],
+            title: "",
+            description: "📅 🎯",
             year: 2024,
-            githubLink: "https://github.com/dhruvilrathod/RSP/tree/master/advent_of_code",
+            githubLink: "",
         },
     ]
 }
@@ -450,22 +343,13 @@ const AchievementInvolvement: ProjectSection = {
     sectionTitle: "Achievements",
     entities: [
         {
-            liveLink: "https://www.linkedin.com/posts/dhruvilrathod_competitiveprogramming-codingchallenges-teamwork-activity-7291965632684695553-CTqM?utm_source=share&utm_medium=member_desktop&rcm=ACoAADi05s0B8nMLyX_mC2aovn2P6w6tNr-b3AA",
-            coverImagePath: AssetPaths.ACHIEVEMENT_CPC_RSP_WIN_PIC,
-            techStack: ["C++", "Python"],
-            title: "CPC X RSP 2025",
-            description: "🏆 Secured 3rd place in a high-stakes coding competition, tackling complex algorithms under pressure! Grateful for an incredible team and experience at CPC X RSP competition.",
+            liveLink: "",
+            coverImagePath: "",
+            techStack: ["C#" ],
+            title: "",
+            description: "🏆 ",
             year: 2025,
-        },
-        {
-            coverImagePath: AssetPaths.ACHIEVEMENT_UNISA_CHANCELLORS_LETTER_2024_PIC,
-            liveLink: "unisa-chancellors-letter-of-commandation-2024.html",
-            // liveLink: "public/unisa-chancellors-letter-of-commandation-2024.html",
-            techStack: ["Cisco", "FortiGate", "ISO 270001"],
-            title: "Chancellor's Commendation Letter (2024)",
-            description: "🚀 Awarded for academic excellence with a cumulative program GPA in the TOP 5% of all students, and invited to join the Golden Key International Honour Society.",
-            year: 2024,
-        },
+        }
     ]
 }
 
